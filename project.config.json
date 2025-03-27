@@ -4,7 +4,7 @@
   "description": "taro-react-starter",
   "appid": "wx3ac3f653002c2ab6",
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": false,
     "enhance": false,
     "compileHotReLoad": false,
