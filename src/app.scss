@@ -1,3 +1,29 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+page {
+    height: 100%;
+    background-color: #f5f5f5;
+    --primary-color: #ff2741;
+    --text-color: #333333;
+    --text-color-light: #666666;
+    --text-color-lighter: #999999;
+    --border-color: #e0e0e0;
+    --bg-color: #f5f5f5;
+}
+
+// NutUI全局变量覆盖
+:root {
+    --nut-primary-color: #ff2741;
+    --nut-primary-color-end: #ff2741;
+    // 按钮
+    --nut-button-border-radius: 18px;
+    // 标签页
+    --nut-tabs-horizontal-tab-line-color: #ff2741;
+    --nut-tabs-horizontal-tab-line-width: 16px;
+    --nut-tabs-tab-active-color: #ff2741;
+    // 搜索栏
+    --nut-searchbar-background: #f5f5f5;
+    --nut-searchbar-input-background: #f5f5f5;
+    --nut-searchbar-right-out-color: #ff2741;
+}

@@ -1,0 +1,93 @@
+.xhs-text-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    // 默认样式 - 白色背景 + 网格
+    &.default {
+        background-color: white;
+        background-image: radial-gradient(#f0f0f0 1px, transparent 1px);
+        background-size: 15px 15px;
+    }
+    // 蓝色背景
+    &.blue {
+        background-color: #e8f3ff;
+    }
+    // 紫色背景
+    &.purple {
+        background-color: #f3e8ff;
+    }
+    // 粉色背景
+    &.pink {
+        background-color: #ffe8f0;
+    }
+    .card-content {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 1.4;
+            margin-bottom: 12px;
+            word-break: break-word;
+            .highlight {
+                display: inline;
+                padding: 0 3px;
+                border-radius: 4px;
+            }
+        }
+        .icon-wrapper {
+            width: 40px;
+            height: 40px;
+            margin: 8px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .icon {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    .card-footer {
+        padding: 10px 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        .author {
+            display: flex;
+            align-items: center;
+            .avatar {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                margin-right: 8px;
+            }
+            .name {
+                font-size: 12px;
+                color: #666;
+                max-width: 100px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+        .likes {
+            display: flex;
+            align-items: center;
+            .count {
+                font-size: 12px;
+                color: #666;
+                margin-left: 4px;
+            }
+        }
+    }
+}

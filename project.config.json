@@ -2,7 +2,6 @@
   "miniprogramRoot": "dist/",
   "projectname": "taro-react-starter",
   "description": "taro-react-starter",
-  "appid": "wx3ac3f653002c2ab6",
   "setting": {
     "urlCheck": false,
     "es6": false,
@@ -14,6 +13,15 @@
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
+    },
+    "lazyCodeLoading": "requiredComponents",
+    "minify": "terser",
+    "terser": {
+      "enable": true,
+      "config": {
+        "compress": true,
+        "mangle": true
+      }
     }
   },
   "compileType": "miniprogram",
@@ -27,5 +35,6 @@
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
-  }
+  },
+  "appid": "wxfabad091b115a638"
 }
